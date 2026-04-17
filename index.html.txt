@@ -2,47 +2,194 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>ركن صافر للتجارة</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ركن صافر للتجارة | مواد البناء والكهرباء</title>
+
 <style>
-body {font-family: Arial; margin:0; background:#f5f5f5;}
-header {background:#1e3a5f; color:#fff; padding:20px; text-align:center;}
-section {padding:20px;}
-.services div {background:#fff; margin:10px; padding:15px; border-radius:10px;}
-footer {background:#1e3a5f; color:#fff; text-align:center; padding:15px;}
+
+body {
+    margin:0;
+    font-family: 'Tahoma', sans-serif;
+    background:#f1f5f9;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg,#1e3a5f,#0f172a);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header img {
+    width:110px;
+    margin-bottom:10px;
+}
+
+/* SECTION */
+section {
+    padding:40px 20px;
+    text-align:center;
+}
+
+/* GRID */
+.services {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* BOX */
+.box {
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.box:hover {
+    transform:translateY(-10px);
+}
+
+/* IMAGE */
+.box img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* TEXT */
+.box p {
+    padding:10px;
+    font-weight:bold;
+}
+
+/* BUTTON */
+.btn {
+    display:inline-block;
+    margin:10px;
+    background:#f97316;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+    text-decoration:none;
+}
+
+.btn:hover {
+    background:#ea580c;
+}
+
+/* CONTACT */
+.contact {
+    background:#1e293b;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* FOOTER */
+footer {
+    background:#0f172a;
+    color:#aaa;
+    text-align:center;
+    padding:15px;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
+<img src="logo.png" alt="logo">
 <h1>ركن صافر للتجارة</h1>
-<p>جودة • موثوقية • أمان</p>
+<p>مواد البناء • الكهرباء • الدهانات • أدوات الورش • السلامة</p>
+<a href="https://wa.me/967780959949" class="btn">اطلب الآن</a>
 </header>
 
+<!-- ABOUT -->
 <section>
 <h2>من نحن</h2>
-<p>نوفر جميع احتياجات مواد البناء والكهرباء والدهانات ومستلزمات الورش وأدوات السلامة.</p>
+<p>
+نقدم أفضل مواد البناء والكهرباء والدهانات ومستلزمات الورش 
+وأدوات الأمن والسلامة بجودة عالية وأسعار منافسة.
+</p>
 </section>
 
-<section class="services">
-<h2>خدماتنا</h2>
-<div>مواد البناء</div>
-<div>مستلزمات الكهرباء</div>
-<div>الدهانات</div>
-<div>مستلزمات الورش</div>
-<div>أدوات الأمن والسلامة</div>
+<!-- PRODUCTS -->
+<section>
+<h2>منتجاتنا</h2>
+
+<div class="services">
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1581091215367-59ab6b2a94f2">
+<p>مواد البناء (أسمنت - بلوك)</p>
+<a href="https://wa.me/967780959949?text=أرغب%20بطلب%20مواد%20البناء" class="btn">اطلب الآن</a>
+</div>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<p>تمديدات كهربائية</p>
+<a href="https://wa.me/967780959949?text=أرغب%20بطلب%20مواد%20كهربائية" class="btn">اطلب الآن</a>
+</div>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828">
+<p>دهانات وطلاء</p>
+<a href="https://wa.me/967780959949?text=أرغب%20بطلب%20دهانات" class="btn">اطلب الآن</a>
+</div>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1581147036324-c1c7b6b9cfa9">
+<p>معدات ورش</p>
+<a href="https://wa.me/967780959949?text=أرغب%20بطلب%20معدات%20ورش" class="btn">اطلب الآن</a>
+</div>
+
+<div class="box">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<p>معدات السلامة</p>
+<a href="https://wa.me/967780959949?text=أرغب%20بطلب%20معدات%20سلامة" class="btn">اطلب الآن</a>
+</div>
+
+</div>
+
 </section>
 
+<!-- CONTACT -->
 <section>
 <h2>تواصل معنا</h2>
+
+<div class="contact">
 <p>📞 780959949 - 711444959</p>
 <p>📧 munef.business@gmail.com</p>
 <p>📍 مأرب - اليمن</p>
+</div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
 <p>© جميع الحقوق محفوظة - ركن صافر للتجارة</p>
 </footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/967780959949" class="whatsapp">💬</a>
 
 </body>
 </html>
